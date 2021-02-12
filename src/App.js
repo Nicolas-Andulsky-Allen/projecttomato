@@ -9,8 +9,9 @@ import "./nBarSocialLinks.js";
 import React, { Component } from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
 import "./App.css";
-import NBarSocialLinks from "./nBarSocialLinks";
-import NBarBreadCrumbs from "./nBarBreadCrumbs";
+import NBarSocialLinks from "./Components/nBarSocialLinks";
+import NBarLinks from "./Components/nBarLinks";
+import NBar from "./Components/nBar";
 import "./fontawesome";
 
 class App extends Component {
@@ -22,16 +23,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar dark color="primary">
-          <div className="container">
-            <NavbarBrand href="/">Tomato</NavbarBrand>
-          </div>
-          <NBarBreadCrumbs />
-          <NBarSocialLinks />
-        </Navbar>
+        <NBar />
       </div>
     );
   }
 }
 
 export default App;
+/*          <NBarBreadCrumbs />
+          <NBarSocialLinks />
+          */

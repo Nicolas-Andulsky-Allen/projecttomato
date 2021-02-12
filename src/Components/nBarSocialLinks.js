@@ -6,14 +6,14 @@ import {
   faTwitterSquare,
   faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import "./App.css";
+import "../App.css";
 
 class NBarSocialLinks extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
-
+  /* THIS NEEDS TO BE A BUTTON GROUP */
   render() {
     return (
       <div className="text-center">

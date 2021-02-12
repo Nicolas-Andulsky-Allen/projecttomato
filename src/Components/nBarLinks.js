@@ -14,25 +14,17 @@ import {
   faThumbsUp,
   faAddressCard,
 } from "@fortawesome/free-solid-svg-icons";
-import "./App.css";
+import "../App.css";
 
-class NBarBreadCrumbs extends Component {
+class NBarLinks extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
-
+  /* THIS DOES NOT ACTUALLY GO IN THE NAV BAR */
   render() {
     return (
       <div className="container">
-        <a className="navbar-brand" href="tomatoHome.html">
-          <img
-            src="public/cruiseLogo.png"
-            height="90"
-            width="75"
-            alt="Cyprus Culinary Cruises company logo"
-          />
-        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -99,4 +91,4 @@ class NBarBreadCrumbs extends Component {
   }
 }
 
-export default NBarBreadCrumbs;
+export default NBarLinks;
