@@ -12,6 +12,8 @@ import "./App.css";
 import NBarSocialLinks from "./Components/nBarSocialLinks";
 import NBarLinks from "./Components/nBarLinks";
 import NBar from "./Components/nBar";
+import HomeComp from "./Components/homeComp";
+import Footer from "./Components/footer";
 import "./fontawesome";
 
 class App extends Component {
@@ -24,6 +26,8 @@ class App extends Component {
     return (
       <div className="App">
         <NBar />
+        <HomeComp />
+        <Footer />
       </div>
     );
   }

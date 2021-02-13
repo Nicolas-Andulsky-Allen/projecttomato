@@ -32,7 +32,7 @@ const NBar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className="NBar">
       <Navbar color="warning" sticky="top" light expand="md">
         <NavbarBrand className="mr-auto" href="/">
           <img

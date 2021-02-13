@@ -24,7 +24,7 @@ class NBarLinks extends Component {
   /* THIS DOES NOT ACTUALLY GO IN THE NAV BAR */
   render() {
     return (
-      <div className="container">
+      <div className="NBarLinks container">
         <button
           className="navbar-toggler"
           type="button"

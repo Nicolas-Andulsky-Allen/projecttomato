@@ -16,7 +16,7 @@ class NBarSocialLinks extends Component {
   /* THIS NEEDS TO BE A BUTTON GROUP */
   render() {
     return (
-      <div className="text-center">
+      <div className="NBarSocialLinks text-center">
         <h5>Social</h5>
         <a className="btn" href="http://instagram.com/">
           <i>
