@@ -100,19 +100,19 @@ const Footer = (props) => {
             <p>Links</p>
             <Nav vertical>
               <NavItem>
-                <NavLink href="#">Home</NavLink>
+                <NavLink href="/home">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">About Us</NavLink>
+                <NavLink href="/aboutus">About Us</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Our Ship</NavLink>
+                <NavLink href="/ship">Our Ship</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Itinerary</NavLink>
+                <NavLink href="/itinerary">Itinerary</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Testimonials</NavLink>
+                <NavLink href="/testimonials">Testimonials</NavLink>
               </NavItem>
             </Nav>
           </div>

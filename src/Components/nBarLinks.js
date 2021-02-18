@@ -36,7 +36,7 @@ class NBarLinks extends Component {
         <div className="collapse navbar-collapse" id="tomatoNavbar">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="tomatoHome.html">
+              <a className="nav-link" href="/home">
                 <i>
                   <FontAwesomeIcon icon={faHome} />
                 </i>
@@ -44,7 +44,7 @@ class NBarLinks extends Component {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="tomatoAboutUs.html">
+              <a className="nav-link" href="/aboutus">
                 <i>
                   <FontAwesomeIcon icon={faInfo} />
                 </i>
@@ -52,16 +52,15 @@ class NBarLinks extends Component {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="tomatoShip.html">
+              <a className="nav-link" href="/ship">
                 <i>
-                  {" "}
                   <FontAwesomeIcon icon={faShip} />
                 </i>
                 {"Ship"}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="tomatoItinerary.html">
+              <a className="nav-link" href="/itinerary">
                 <i>
                   <FontAwesomeIcon icon={faList} />
                 </i>
@@ -69,7 +68,7 @@ class NBarLinks extends Component {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="tomatoTestimonials.html">
+              <a className="nav-link" href="/testimonials">
                 <i>
                   <FontAwesomeIcon icon={faThumbsUp} />
                 </i>
@@ -77,7 +76,7 @@ class NBarLinks extends Component {
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="#tomatoContactForm">
+              <a className="nav-link" href="/contact">
                 <i>
                   <FontAwesomeIcon icon={faAddressCard} />
                 </i>

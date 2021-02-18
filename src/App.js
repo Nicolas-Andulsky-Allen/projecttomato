@@ -14,7 +14,10 @@ import NBarLinks from "./Components/nBarLinks";
 import NBar from "./Components/nBar";
 import HomeComp from "./Components/homeComp";
 import Footer from "./Components/footer";
+import Main from "./Components/main";
 import "./fontawesome";
+import { BrowserRouter } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 class App extends Component {
   constructor(props) {
@@ -24,11 +27,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <NBar />
-        <HomeComp />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Main />
+        </div>
+      </BrowserRouter>
     );
   }
 }
