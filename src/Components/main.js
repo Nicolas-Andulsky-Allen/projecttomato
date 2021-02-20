@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, NavbarBrand } from "reactstrap";
+
 import AboutUs from "./aboutUs";
 import Footer from "./footer";
 import HomeComp from "./homeComp";
@@ -8,19 +8,22 @@ import Itinerary from "./itinerary";
 import Testimonials from "./testimonials";
 import ContactEmpty from "./contact";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import NVarBread from "./nBarBread";
-import NBarLinks from "./nBarLinks";
-import NBarSocialLinks from "./nBarSocialLinks";
+
 import Ship from "./ship";
-import { Switch, Route, Redirect } from "react-router-dom";
-import Row from "reactstrap/lib/Row";
+import { Switch, Route, Redirect, withRouter } from "react-router-dom";
+import { connect } from "react-redux";
+
+const mapStatetoProps = (state) => {
+  return {
+    weatherData: state.weatherData,
+  };
+};
 
 class Main extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
   render() {
+    const ItinPage = () => {
+      return <Itinerary weatherData={this.props.weatherData} />;
+    };
     return (
       <div>
         {" "}
@@ -35,7 +38,7 @@ class Main extends Component {
               <Route path="/home" component={HomeComp} />
               <Route path="/aboutus" component={AboutUs} />
               <Route path="/ship" component={Ship} />
-              <Route path="/itinerary" component={Itinerary} />
+              <Route path="/itinerary" component={ItinPage} />
               <Route path="/testimonials" component={Testimonials} />
               <Route path="/contact" component={ContactEmpty} />
               <Redirect to="/home" />
@@ -47,4 +50,4 @@ class Main extends Component {
     );
   }
 }
-export default Main;
+export default withRouter(connect(mapStateToProps)(Main));
